@@ -7,7 +7,7 @@ import type { Choice } from "@johnlindquist/kit"
 import { chooseIde } from "../lib/product-selector"
 
 import { fileURLToPath } from "node:url"
-import { promptConfirm } from "../../kit-utils"
+import { promptConfirm } from "@josxa/kit-utils"
 import { mergeConfigs, parseXml } from "../lib/xml"
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
