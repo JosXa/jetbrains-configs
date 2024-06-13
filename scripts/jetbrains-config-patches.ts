@@ -1,5 +1,3 @@
-// Name: Apply JetBrains IDE config patches
-
 import "@johnlindquist/kit"
 import path, { dirname } from "node:path"
 
@@ -9,6 +7,10 @@ import { chooseIde } from "../lib/product-selector"
 import { fileURLToPath } from "node:url"
 import { promptConfirm } from "@josxa/kit-utils"
 import { mergeConfigs, parseXml } from "../lib/xml"
+
+export const metadata: Metadata = {
+  name: "JetBrains IDE Config Patches",
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
