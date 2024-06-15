@@ -8,8 +8,9 @@ import { fileURLToPath } from "node:url"
 import { promptConfirm } from "@josxa/kit-utils"
 import { mergeConfigs, parseXml } from "../lib/xml"
 
-export const metadata: Metadata = {
+metadata = {
   name: "JetBrains IDE Config Patches",
+  alias: "jk",
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
