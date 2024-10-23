@@ -2,11 +2,11 @@ import "@johnlindquist/kit"
 import path, { dirname } from "node:path"
 
 import type { Choice } from "@johnlindquist/kit"
-import { chooseIde } from "../lib/product-selector"
+import { chooseIde } from "../lib/product-selector.ts"
 
 import { fileURLToPath } from "node:url"
 import { promptConfirm } from "@josxa/kit-utils"
-import { mergeConfigs, parseXml } from "../lib/xml"
+import { mergeConfigs, parseXml } from "../lib/xml.ts"
 
 metadata = {
   name: "JetBrains IDE Config Patches",
